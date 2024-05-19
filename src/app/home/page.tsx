@@ -38,7 +38,7 @@ export default function HomePage() {
           <h1 className="text-2xl text-gray-900 font-bold italic">FindPG</h1>
           <ul className="flex flex-row gap-2 items-center">
             <li>
-              <Link className="px-5 py-2 bg-yellow-500 text-white rounded-lg" href="/admin/add-room">Add room</Link>
+              <Link className="px-5 py-2 bg-yellow-500 text-white rounded-lg" href="/add-room">Add room</Link>
             </li>
             <li>
               <LogoutButton>Logout</LogoutButton>
