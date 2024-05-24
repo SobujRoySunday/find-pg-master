@@ -5,7 +5,7 @@ import { prisma } from "@/lib/prisma";
 export async function POST(request: NextRequest) {
   try {
     const reqBody = await request.json()
-    const { name, email, password, rePassword, role } = reqBody
+    const { name, email, password, rePassword, role, phone } = reqBody
 
     if (password !== rePassword) {
       return NextResponse.json({ error: `Passwords didn't match` }, { status: 400 })
@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
     const salt = await bcryptjs.genSalt(10)
     const hashedPassword = await bcryptjs.hash(password, salt)
     const createdUser = await prisma.users.create({
-      data: { name: name, email: email, role: role, password: hashedPassword }
+      data: { name: name, email: email, role: role, password: hashedPassword, phone: phone }
     })
 
     return NextResponse.json({

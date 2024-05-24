@@ -14,7 +14,8 @@ export default function SignUpPage() {
     email: "",
     password: "",
     rePassword: "",
-    role: UserRoles.CLIENT
+    role: UserRoles.CLIENT,
+    phone: ""
   })
 
   async function onSignup(e: { preventDefault: () => void }) {
@@ -45,6 +46,12 @@ export default function SignUpPage() {
               <p className="text-xs text-gray-300">Email</p>
             </label>
             <input className="input input-ghost w-full text-gray-400" type="email" name="email" value={user.email} onChange={(e) => { handleChange(e, setUser) }} required />
+          </div>
+          <div>
+            <label className="label">
+              <p className="text-xs text-gray-300">Mobile Number</p>
+            </label>
+            <input className="input input-ghost w-full text-gray-400" type="text" name="phone" value={user.phone} onChange={(e) => { handleChange(e, setUser) }} required />
           </div>
           <div>
             <label className="label">

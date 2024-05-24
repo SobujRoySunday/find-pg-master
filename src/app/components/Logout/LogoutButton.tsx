@@ -17,7 +17,7 @@ export default function LogoutButton({ children }: { children: any }) {
   }
 
   return (
-    <button onClick={logout} className="px-5 py-2 bg-red-500 text-white rounded-lg border-0">
+    <button onClick={logout} className="px-3 py-1 bg-red-500 text-white rounded-lg border-0">
       {children}
     </button>
   )
