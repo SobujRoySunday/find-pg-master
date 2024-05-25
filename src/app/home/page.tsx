@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import RoomCard from "./RoomCard";
 import axios from "axios";
-import { SearchInput, Navbar } from "../components";
+import { SearchInput, Navbar , Footer} from "../components";
 import { useSearchParams } from "next/navigation";
 import Contact from "./Contact";
 
@@ -64,6 +64,7 @@ export default function HomePage() {
             }
           </div>
         </div>
+        <Footer/>
       </div>
       {
         contactDisplay ? <Contact phone={myAuthor.phone} email={myAuthor.email} setContactDisplay={setContactDisplay} /> : null

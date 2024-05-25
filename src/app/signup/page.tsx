@@ -66,7 +66,7 @@ export default function SignUpPage() {
             <input className="input input-ghost w-full text-gray-400" type="password" name="rePassword" value={user.rePassword} onChange={(e) => { handleChange(e, setUser) }} required />
           </div>
           <div>
-            <Link className="text-xs text-gray-300 hover:link" href='login'>Already have an account?</Link>
+            <Link className="text-xs text-gray-300 hover:link" href='/'>Already have an account?</Link>
           </div>
         </div>
         <button className="btn btn-primary w-full" onClick={onSignup}>Create</button>

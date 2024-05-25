@@ -8,7 +8,7 @@ import {LogoutButton} from '../'
 const Navbar = () => {
   return (
     <nav className="px-5 py-2 flex flex-row justify-between items-center w-full">
-          <Link href="/" className="text-2xl text-gray-800 font-bold italic">FindPG</Link>
+          <Link href="/" className="text-2xl text-gray-700 font-bold italic hover:text-gray-800">FindingHome</Link>
           <ul className="flex flex-row gap-3 items-center">
             <li>
               <Link href="/view">

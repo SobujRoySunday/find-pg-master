@@ -22,6 +22,7 @@ export const config = {
     '/login',
     '/signup',
     '/home',
-    '/add-room'
+    '/add-room',
+    '/view'
   ],
 }
